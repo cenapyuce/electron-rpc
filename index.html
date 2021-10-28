@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <link href="./styles.css" rel="stylesheet">
+    <title>Discord RPC</title>
+  </head>
+  <body>
+    <h1>Merhaba Bu Discord RPC!</h1>
+  <form method="post" action="/rpcset">
+    <input type="text" name="details" id="details" placeholder="Detaylar">
+    <input type="text" name="imagekey" id="imagekey" placeholder="Resim ismi">
+    <input type="text" name="imagetext" id="imagetext" placeholder="resimin üstünde yazan şey">
+    <input type="submit" value="Ayarla">
+  </form>
+    <script src="./renderer.js"></script>
+  </body>
+</html>

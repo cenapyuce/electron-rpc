@@ -19,9 +19,9 @@ const db = new JsonDatabase({
 appp.use(bodyParser.urlencoded({ extended: false }))
 appp.use(bodyParser.json())
 const AppID = "903315059604877342"
-const details = (db.get("rpc").details)
-const largeImageKey = (db.get("rpc").imagekey)
-const largeImageText = (db.get("rpc").imagetext)
+const details = (db.get("rpc").details) || "ayarlanmamış";
+const largeImageKey = (db.get("rpc").imagekey) || "ayarlanmamış";
+const largeImageText = (db.get("rpc").imagetext) || "ayarlanmamış";
 client.on('ready', () => {
 
 client.setActivity({
